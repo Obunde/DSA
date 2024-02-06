@@ -1,0 +1,74 @@
+UML Class Diagram for List ADT
+
+-------------------------------
+|        List                |
+-------------------------------
+| - size: int                |
+-------------------------------
+| + insert(index: int, element: T): void |
+| + remove(index: int): void             |
+| + get(index: int): T                    |
+| + size(): int                           |
+-------------------------------
+Public operations:
+
+insert(index: int, element: T): void - Inserts an element at the specified index.
+remove(index: int): void - Removes the element at the specified index.
+get(index: int): T - Retrieves the element at the specified index.
+size(): int - Returns the current size of the list.
+UML Sequence Diagram for Insert Operation
+
+-----------------------       ----------------------
+|      Client Code      |       |          List        |
+-----------------------       ----------------------
+      |                          |
+      |  insert(index, element)  |
+      |------------------------->|
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |          [List updates]   |
+      |<-------------------------|
+UML Sequence Diagram for Remove Operation
+
+-----------------------       ----------------------
+|      Client Code      |       |          List        |
+-----------------------       ----------------------
+      |                          |
+      |   remove(index)          |
+      |------------------------->|
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |          [List updates]   |
+      |<-------------------------|
+UML Sequence Diagram for Get Operation
+
+-----------------------       ----------------------
+|      Client Code      |       |          List        |
+-----------------------       ----------------------
+      |                          |
+      |     get(index)           |
+      |------------------------->|
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |                          |
+      |<-------------------------|
+      |                          |
+
+
